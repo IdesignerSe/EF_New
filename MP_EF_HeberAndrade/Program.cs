@@ -15,9 +15,9 @@ namespace MP_EF_HeberAndrade
 
                  //(string brand, string modelName, int purchaseDate, int inicialCost, int expiredDate, int expiredCost)
                 // new Asset("MacBook", "Pro 2018 15 inch ", 20180101, 13000, 20211201, 8000),
-                 dbContext.Add(new Computer("MacBook", "Pro 2018 15 inch ", 20180101, 13000, 20211201, 8000));
-                  
-                 dbContext.SaveChanges();
+                dbContext.Add(new Computer("MacBook", "Pro 2018 15 inch ", 20180101, 13000, 20211201, 8000));
+
+                dbContext.SaveChanges();
                 
                  var result = dbContext.Computers.ToList()
                                    .Select(d => d.Brand);
